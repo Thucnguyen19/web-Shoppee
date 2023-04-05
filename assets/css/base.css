@@ -1,0 +1,35 @@
+:root{
+    --primary-color:rgb(238, 77, 45) ;
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+}
+
+*{
+    box-sizing: inherit;/*để về thuộc tính mặc định */
+}
+
+html{
+    /*font-size: 100%;đa phần mặc định font-size :16px */
+   /* 1 chút chú ý ; 1 rem =10px .Nếu ta muốn hack font để giá trị font 1rem=10px  thì bắt buộc phải để font-size : 62.5%(16px-6px)*/
+    /*Hack font*/
+    font-size:62.5%;
+    line-height: 1.6rem ; /*1.6rem=16px chiều cao dòng chữ mặc định 1.6 rem*/
+    font-family: 'Roboto', sans-serif;/*tên font chúng chữ chúng ta vừa chọn là Roboto, sán-serif là kiểu chủng chữ không có chân ;có thể hiểu là nếu trong trường hợp web chưa tải font roboro thì fon sans-serif sẽ hoạt động cho đến khi font roboto sẽ đc tải  */
+    box-sizing: border-box;
+}
+
+.grit{
+    width:1200px;
+    max-width: 100%;/*có tác dụng thu nhỏ kích thước bằng với kích thước manf hình khi màn hình thu nhỏ dưới width:1200px */
+    margin: 0 auto;
+}
+.grit__full-with{/*tạo class này để trong t/h chúng ta muốn thêm vào một class nào đó mà ko muốn sử dụng .grit*/
+    width:100%;
+
+}
+
+.grit__row{
+    display:flex;
+    flex-wrap: wrap;
+}

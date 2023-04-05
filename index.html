@@ -1,0 +1,2539 @@
+<!-- design by Thuc nguyen -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- thẻ link reset css lấy từ normalize  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.min.css">
+    <title>Shopee</title>
+</head>
+<body>
+    <!-- Block Element Modifier :BEM ,đối với block thì đc hiểu là thẻ lớn bao gồm các element, còn modifier là thuộc tinhd quyết định màu sắc , style , size ,cách viết BEM : block__element--modifier -->
+   <div class="app">
+       <header class="header">
+           <div class="grit">
+               <nav class="header__navbar">  <!--với tên class này đc hiểu chỉ có block và element-->
+                    <ul class="header__navbar-list ">
+                        <li class="header__navbar-item">
+                            Kênh người bán </li>
+                        <li class="header__navbar-item header__navbar-item--has-qr">
+                            <a href="https://shopee.vn/web" class="header__navbar-item-link">
+                                Tải ứng dụng
+                                <div class="qr-code">
+                                    <div class="header-qr">
+                                        <a href="https://shopee.vn/web">
+                                            <img src="./img/Ma-QR-shopee.png" alt="QRcode" class="header-qr-img">
+                                        </a>
+                                     </div>
+                                    <div class="header-apps">
+                                        <a class="header__link-dowload" href="https://shopee.vn/web">
+                                            <img src="./img/app-store.png" alt="appstore" class="header-apps-img">
+                                        </a>
+                                        <a class="header__link-dowload" href="https://shopee.vn/web">
+                                            <img src="./img/google-play.png" alt="google play" class="header-apps-img">
+                                        </a>
+                                        <a class="header__link-dowload" href="https://shopee.vn/web">
+                                            <img src="./img/app-galerry.png" alt="app gallery" class="header-apps-img">
+                                        </a>
+                                            
+                                        
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header__navbar-itemk">
+                            Kết nối
+                        </li>
+                        <li class="header__navbar-item none-border">
+                            <a href="https://www.facebook.com/ShopeeVN" class="nav-icon-link">
+                                <i class="nav-icon fab fa-facebook"></i>
+                            </a>
+                            
+                            <a href="https://www.instagram.com/Shopee_VN/" class="nav-icon-link">
+                                <i class="nav-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+    
+                    </ul>
+                    <ul class="header__nav-list">
+                        <li class="header__navbar-item none-border  header__notify-has">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="nav-icon far fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>
+                                    Thông báo mới nhận 
+                                    </h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item-viewed">
+                                        <a href="https://shopee.vn/m/hangquocte-1809" class="header__notify-link">
+                                            <img src="./img/ngayhoitrangram.png" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span>Vui hội Trăng Rằm - Quốc tế sale đỉnh </span>
+                                                <span class="header__notify-decription">Tặng bạn 2 mã Freeship mua sắm , cùng hàng loạt ưu đãi hot 1k , 9k</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://cf.shopee.vn/file/7d986e8b560b37ded3bdc616b2183e86_tn" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span>Rình rang mã hot cho siêu Sale 22.09</span>
+                                                <span class="header__notify-decription">😍 Hoàn xu đến 20K cho đơn 99K
+                                                    💥 Hoàn xu đến 100K cho đơn 500K
+                                                    ⚡ Hoàn xu Shopee Mall đến 70K
+                                                    👉 Săn trước hôm nay để dành 22.9 bạn ơi!</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify-item  header__notify-item-viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./img/shopee.png" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span>Ting Ting </span>
+                                                <span class="header__notify-decription">✨Vũ trụ Shopee đang mách bảo bạn điều gì? Xem ngay TẠI ĐÂY👉</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://cf.shopee.vn/file/1567991b5d3f8c444c388d2ebd7f13ab_tn" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span>Deal thơm thế này sao lại bỏ lỡ!</span>
+                                                <span class="header__notify-decription">🔥 Quốc Tế siêu sale cực đã 
+                                                    ☄️ Nhiểu deal hot x9K
+                                                    🎉 Mua nhiều giảm đến 50%
+                                                    🛒 Toàn hàng hot hit - Lỡ là tiếc nha! </span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="https://cf.shopee.vn/file/afd61876eccbba55e5fd44dc5e361ac2_tn" alt="" class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span>Voucher nóng hổi đừng vội bỏ qua!</span>
+                                                <span class="header__notify-decription">💥 Mã Hoàn đến 100K Xu đơn 150K
+                                                    🌈 Đã có sẵn trong ví voucher của bạn
+                                                    🔔 Hiệu lực: 0H 19/09/2021 - 23H59 25/09/2021 
+                                                    👉 Số lượng có hạn - Dùng ngay bạn nhé! </span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <footer class="header__notify-footer">
+                                        <a href="https://shopee.vn/user/notifications/order" class="header__notify-footer-p">Xem tất cả </a>
+                                    </footer>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item none-border">
+                            <a href="https://help.shopee.vn/vn/s/" class="header__navbar-item-link">
+                                <i class="nav-icon far fa-question-circle"></i> 
+                                Hỗ trợ
+                            </a>
+                        </li>
+                        <!-- khi chưa đăng nhập  -->
+                        <!-- <li class="header__navbar-item">                            
+                            <a href="https://shopee.vn/buyer/signup?next=https%3A%2F%2Fshopee.vn%2Fm%2Fsell-on-shopee" class="header__navbar-item-link">Đăng ký</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="https://shopee.vn/buyer/login?next=https%3A%2F%2Fshopee.vn%2Fm%2Fsell-on-shopee" class="header__navbar-item-link">Đăng nhập</a>
+                        </li> -->
+                        <li class="header__navbar-item header__navbar-user none-border">
+                            <a href="https://help.shopee.vn/vn/s/" class="header__navbar-item-link">
+                                <img src="./img/ảnh đại diện.jpeg" alt="" class="header__navbar-user-img">
+                                <span class="header__navbar-user-span">Thực Nguyễn</span>
+                                <div class="header__navbar-login">
+                                        <a href="" class="header__navbar-login-link">Tài khoản của tôi</a>                                    
+                                        <a href="" class="header__navbar-login-link">Đơn mua</a>
+                                        <a href="" class="header__navbar-login-link">Đăng xuất</a>                                    
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+               </nav>
+               <div class="body__header">
+                   <div class="body__header-slogan">
+                       <div class="body-img">
+                           <img class="logo-shopee" src="./img/shopee1.png" alt="">
+                           <span class="body-span">Shopee</span>                          
+                       </div>
+                   </div>
+                   <div class="body__header-search-total">
+                       <div class="body__header-search">
+                           <input type="text" class="body-search-input" placeholder="Nhập để tìm kiếm">
+                           <div class="header__search-history">
+                               <h3 class="header__search-history-heading">Lịch sử tìm kiếm </h3>
+                               <ul class="header__search-history-list">
+                                   <li class="header__search-history-item">
+                                       <a href="" class="header__history-item-link">áo hodie</a>
+                                   </li>
+                                   <li class="header__search-history-item">
+                                       <a href="" class="header__history-item-link">quần kaki </a>
+                                   </li>
+                               </ul>
+                           </div>
+                           <div class="body__header-search-selection">
+                               <span class="border-span">Trong shop</span>
+                               <i class="border-icon fas fa-angle-down"></i>
+                               <ul class="header__out-shop">
+                                <li class="header__out-shop-span body-header-item-active">
+                                   <span class="border-span2">Trong Shop này</span>
+                                   <i class="border-icon2 fas fa-check"></i>
+                               </li>
+                               <li class="header__out-shop-span">
+                                   <span class="border-span2">Trong Shopee</span>   
+                                   <i class="border-icon2 fas fa-check"></i>
+
+                               </li>
+                               </ul> 
+                            </div>
+                           <button class="body-search-two">                              
+                            <i class="button-search fas fa-search">
+                            </i>
+                           </button>                        
+                       </div>
+                       <div class="footer-header">
+                        <div class="footer-header-total">
+                            <a href="" class="footer-header-link">Áo khoác</a>
+                         </div>
+                        <div class="footer-header-total">
+                            <a href="" class="footer-header-link">Bánh trung thu</a>
+                         </div>
+                        <div class="footer-header-total">
+                            <a href="" class="footer-header-link">Bông tẩy trang</a>
+                         </div>
+                        <div class="footer-header-total">
+                            <a href="" class="footer-header-link">Quần</a>
+                         </div>
+                        <div class="footer-header-total">
+                            <a href="" class="footer-header-link">Váy</a>
+                         </div>
+                        <div class="footer-header-total">
+                            <a href="" class="footer-header-link">Tai nghe</a>
+                         </div>
+                        <div class="footer-header-total">
+                            <a href="" class="footer-header-link">Áo cropton</a>
+                         </div>
+                        <div class="footer-header-total">
+                            <a href="" class="footer-header-link">Son</a>
+                         </div>
+                    </div>
+                   </div>
+                   <div class="body__header-cart header__cart-notify-has">
+                       <a href="" class="body__header-cart-link">
+                           <i class="cart fas fa-shopping-cart"></i>
+                           <span class="body__header-cart-notice">4</span>
+                       </a>
+                       <div class="header__cart-notify">
+                        <header class="header__cart-notify-header">
+                            <h3>
+                           Sản phẩm mới thêm 
+                            </h3>
+                        </header>
+                        <ul class="header__cart-notify-list">
+                            <li class="header__cart-notify-item">
+                                <a href="https://shopee.vn/m/hangquocte-1809" class="header__cart-notify-link">
+                                   <div class="header__cart-notify-common">
+                                       <div class="header__cart-notify-info">
+                                           <img src="./img/ngayhoitrangram.png" alt="" class="header__cart-notify-img">
+                                           <span class="header__cart-notify-decription">Áo khoác tay dài chống gió giữ ấm ...</span>
+                                       </div>
+                                       <div class="produce__body-price">
+                                           <div class="produce__body-pricedong">₫</div> 
+                                           <div class="produce__body-pricenumber">100.000</div>
+                                        </div>
+                                   </div>
+                                </a>
+                            </li>
+
+                            <li class="header__cart-notify-item">
+                                <a href="https://shopee.vn/m/hangquocte-1809" class="header__cart-notify-link">
+                                   <div class="header__cart-notify-common">
+                                       <div class="header__cart-notify-info">
+                                           <img src="./img/ngayhoitrangram.png" alt="" class="header__cart-notify-img">
+                                           <button class="header__cart-notify-btn">
+                                               Combo hủy diệt 
+                                           </button>
+                                           <span class="header__cart-notify-decription">Áo khoác tay dài...</span>
+                                       </div>
+                                       <div class="produce__body-price">
+                                           <div class="produce__body-pricedong">₫</div> 
+                                           <div class="produce__body-pricenumber">100.000</div>
+                                        </div>
+                                   </div>
+                                </a>
+                            </li>
+
+                            <li class="header__cart-notify-item">
+                                <a href="https://shopee.vn/m/hangquocte-1809" class="header__cart-notify-link">
+                                   <div class="header__cart-notify-common">
+                                       <div class="header__cart-notify-info">
+                                           <img src="./img/ngayhoitrangram.png" alt="" class="header__cart-notify-img">
+                                           <span class="header__cart-notify-decription">Áo khoác tay dài chống gió giữ ấm ...</span>
+                                       </div>
+                                       <div class="produce__body-price">
+                                           <div class="produce__body-pricedong">₫</div> 
+                                           <div class="produce__body-pricenumber">100.000</div>
+                                        </div>
+                                   </div>
+                                </a>
+                            </li>
+
+                            <li class="header__cart-notify-item">
+                                <a href="https://shopee.vn/m/hangquocte-1809" class="header__cart-notify-link">
+                                   <div class="header__cart-notify-common">
+                                       <div class="header__cart-notify-info">
+                                           <img src="./img/ngayhoitrangram.png" alt="" class="header__cart-notify-img">
+                                           <button class="header__cart-notify-btn">
+                                               Combo hủy diệt 
+                                           </button>
+                                           <span class="header__cart-notify-decription">Áo khoác tay dài...</span>
+                                       </div>
+                                       <div class="produce__body-price">
+                                           <div class="produce__body-pricedong">₫</div> 
+                                           <div class="produce__body-pricenumber">100.000</div>
+                                        </div>
+                                   </div>
+                                </a>
+                            </li>
+                            <footer class="header__cart-notify-footer">
+                                <span class="header__cart-notify-footer-span">4 mới thêm vào giỏ hàng</span>
+                                <a href="https://shopee.vn/user/notifications/order" class="header__cart-notify-footer-p"><button class="header-cart-footer-end">Xem tất cả sản phẩm</button> </a>
+                            </footer>
+                            
+                        </ul>
+                    </div>
+                   <!-- No-cart :Khi muốn hiện giỏ hàng trống thì chúng ta cho class="body__header-no-cart" vào cạnh class="body__header-cart-modal" -->
+                     <div class="body__header-cart-modal">
+                        <img src="/img/no-cart.png" alt="no-cart" class="body__header-cart-img">
+                        <span class="body__header-cart-span">
+                            Chưa có sản phẩm 
+                        </span>
+                     </div>
+                    </div>
+                   
+                </div>
+           </div>
+
+
+       </header>
+       <!-- Kết thúc phần header  -->
+       <div class="cotainer">
+         <div class="container__header">
+              <div class="container__header-preamble">
+                 <div class="container__header-profile">
+                      <div class="profiletotal">
+                          <img src="./img/bóng ma anh quốc 2.jpeg" alt="" class="container__header-img">
+                          <div class="profile-span">
+                              <h1 class="container__header-span1">MEN'S SHOP</h1>
+                              <p class="container__header-span2">Online 3 giờ trước</p>
+                          </div>                          
+                      </div>
+                      <div class="container__header-totalbtn">
+                          <a href="" class="container__header-link">
+                            <button class="container__header-profilebtn">
+                                <span class="btn-follow">+ Theo dõi</span>
+                            </button>                            
+                          </a>
+                          <a href="" class="container__header-link">
+                           <button class="container__header-profilebtn">
+                            <span class="btn-follow">Chat</span>
+                           </button>                         
+                          </a>
+                      </div>
+                  </div>
+                     <!-- phần Sản phẩm  -->
+                  <div class="container__header-product">
+                    <div class="produce-icon">
+                        <a href="" class="produce-link">
+                            <i class="produceicon fas fa-store"></i>
+                              <div class="produce-span">Sản phẩm: <div class="color">59</div></div>
+                            </div>
+                        </a>
+                    <div class="produce-icon">
+                        <i class="produceicon fas fa-user-plus"></i>
+                        <div class="produce-span">Đang theo dõi: <div class="color">5</div></div>
+                  </div>
+                    <div class="produce-icon">
+                        <i class="produceicon far fa-comment-dots"></i>
+                        <div class="produce-span">Tỉ lệ phản hồi chat: <div class="color2">100%</div> <div class="color">(Trong Vài Phút)</div></div>
+                      </div>
+                  </div>
+                      <!-- phần follow  -->
+                  <div class="container__header-product">
+                    <div class="produce-icon">
+                        <i class="produceicon fas fa-users"></i>
+                      <div class="produce-span">Người theo dõi <div class="color">100k</div></div>
+                    </div>
+                    <div class="produce-icon">
+                        <a href="" class="container__header-link">
+                            <i class="produceicon fas fa-star"></i>
+                            <div class="produce-span">Đánh giá: <div class="color">4.95(5k Đánh giá)</div></div>
+                        </a>
+                  </div>
+                    <div class="produce-icon">
+                        <i class="produceicon fas fa-user-check"></i>
+                        <div class="produce-span">Tham gia: <div class="color">10 Năm trước </div></div>
+                      </div>
+                  </div>                                
+              </div>
+             <div class="bg1px"></div>
+             <div class="container__header-endpreamble"> 
+                <ul class="tab__produce-list">
+                    <li class="tab__produce-menuone">
+                        <a href="" class="tab__produce-linkone">
+                            Dạo
+                        </a>
+                    </li>
+                    
+                    <li class="tab__produce-menu">
+                        <a href="" class="tab__produce-link">
+                            Tất cả sản phẩm
+                        </a>
+                    </li>
+                    <li class="tab__produce-menu">
+                        <a href="" class="tab__produce-link">
+                            Áo thun 
+                        </a>
+                    </li>
+                    <li class="tab__produce-menu">
+                        <a href="" class="tab__produce-link">
+                            Thời trang Nam 
+                        </a>
+                    </li>
+                    <li class="tab__produce-menu">
+                        <a href="" class="tab__produce-link">
+                            Bộ
+                        </a>
+                    </li>
+                    <li class="tab__produce-menu">
+                        <a href="" class="tab__produce-link">
+                            Phụ kiện thời trang 
+                        </a>
+                    </li>
+                    <li class="tab__produce-menu">
+                        <div class="tab__produce-boder-left">
+                            <a href="" class="tab__produce-link">
+                               <span class="tab__produce-menu-span">Thêm</span>
+                                <i class="fas fa-sort-down"></i>
+                            </a>
+                        </div>
+                        <div class="tab__produce-modal">
+                            <ul class="tab__produce-list-two">
+                                <li class="tab__produce-item">
+                                    <a href="https://shopee.vn/m/hangquocte-1809" class="header__notify-link">
+                                        <div class="tab__produce-info">
+                                               <span>Khăn quàng cổ</span> 
+                                        </div>
+                                    </a>
+                               </li>  
+                                <li class="tab__produce-item">
+                                    <a href="https://shopee.vn/m/hangquocte-1809" class="header__notify-link">
+                                        <div class="tab__produce-info">
+                                               <span>Váy</span> 
+                                       </div>
+                                    </a>
+                                </li>  
+                                <li class="tab__produce-item">
+                                    <a href="https://shopee.vn/m/hangquocte-1809" class="header__notify-link">
+                                        <div class="tab__produce-info">
+                                               <span>Đồng hồ đeo tay</span> 
+                                            
+                                        </div>
+                                    </a>
+                                </li>  
+                                <li class="tab__produce-item">
+                                    <a href="https://shopee.vn/m/hangquocte-1809" class="header__notify-link">
+                                        <div class="tab__produce-info">
+                                               <span>Khuyên tai</span> 
+                                            
+                                        </div>
+                                    </a>
+                                </li>  
+                                <li class="tab__produce-item">
+                                    <a href="https://shopee.vn/m/hangquocte-1809" class="header__notify-link">
+                                        <div class="tab__produce-info">
+                                               <span>Ví da cao cấp</span> 
+                                            
+                                        </div>
+                                    </a>
+                                </li>  
+                                <li class="tab__produce-item">
+                                    <a href="https://shopee.vn/m/hangquocte-1809" class="header__notify-link">
+                                        <div class="tab__produce-info">
+                                               <span>Giày nam</span> 
+                                            
+                                        </div>
+                                    </a>
+                                </li>  
+                                <li class="tab__produce-item">
+                                    <a href="https://shopee.vn/m/hangquocte-1809" class="header__notify-link">
+                                        <div class="tab__produce-info">
+                                               <span>Mũ</span> 
+                                            
+                                        </div>
+                                    </a>
+                                </li>  
+                                <li class="tab__produce-item">
+                                    <a href="https://shopee.vn/m/hangquocte-1809" class="header__notify-link">
+                                        <div class="tab__produce-info">
+                                               <span>Áo hodie</span> 
+                                            
+                                        </div>
+                                    </a>
+                                </li>  
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+              
+             </div>
+             <div class="bg2px"></div>
+             <div class="bg1px"></div>
+             <!-- phần sản phẩm  -->
+             <div class="produce">
+                 <div class="produce__heading">
+                     <span class="produce__heading-span">GỢI Ý SẢN PHẨM</span>
+                     <a href="" class="produce__heading-link">Xem tất cả
+                        <i class="produce__heading-icon fas fa-chevron-right"></i>
+                     </a>
+                 </div>
+                 <div class="produce__body">
+                     <div class="produce__body-item">
+                         <a href="" class="produce__body-link">
+                             <div class="produce__body-item-img">
+                                <img src="./img/1.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                             </div>
+                             <div class="produce__body-total-span">
+                                 <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                 <div class="produce__body-trend"># Shop xu hướng</div>
+                                 <div class="produce__body-price">
+                                    <div class="produce__body-pricedong">₫</div> 
+                                    <div class="produce__body-pricenumber">100.000</div>
+                                 </div>
+                                 <div class="produce__body-heart">                                    
+                                        <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                        </span>
+                                    <div class="produce__body-star">
+                                        <i class="produce__body_star-size fas fa-star"></i>
+                                        <i class="produce__body_star-size fas fa-star"></i>
+                                        <i class="produce__body_star-size fas fa-star"></i>
+                                        <i class="produce__body_star-size fas fa-star"></i>
+                                        <i class="produce__body_star-size fas fa-star"></i>
+                                        <span class="produce__body-sold">Đã bán 250</span>
+                                    </div>
+                                 </div>
+                                 <div class="produce__body-address">Hà Nội</div>
+                             </div>
+                             <div class="produce__body-modal-like">
+                                Yêu thích 
+                            </div>
+                            <div class="produce__body-modal-sale">
+                                <span class="produce__body-modal-sale-percent">10%</span>
+                                <span class="produce__body-modal-sale-cut-price">GIẢM</span>
+                            </div>
+                         </a>
+                     </div>
+                       <div class="produce__body-item">
+                         <a href="" class="produce__body-link">
+                            <div class="produce__body-item-img">
+                                <img src="./img/shirt1" alt="Áo khoác" class="produce__body-img">
+
+                            </div>
+                             <div class="produce__body-total-span">
+                                 <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                 <div class="produce__body-trend"># Shop xu hướng</div>
+                                 <div class="produce__body-price">
+                                    <div class="produce__body-pricedong">₫</div> 
+                                    <div class="produce__body-pricenumber">100.000</div>
+                                 </div>
+                                 <div class="produce__body-heart">
+                                   <span class="produce__body-heart-icons produce__body-heart-icons-liked ">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                    <div class="produce__body-star">
+                                        <i class="produce__body_star-size fas fa-star"></i>
+                                        <i class="produce__body_star-size fas fa-star"></i>
+                                        <i class="produce__body_star-size fas fa-star"></i>
+                                        <i class="produce__body_star-size fas fa-star"></i>
+                                        <i class="produce__body_star-size2 fas fa-star"></i>
+                                        <span class="produce__body-sold">Đã bán 250</span>
+                                    </div>
+                                 </div>
+                                 <div class="produce__body-address">Hà Nội</div>
+                             </div>
+                             <div class="produce__body-modal-like">
+                                Yêu thích 
+                            </div>
+                            <div class="produce__body-modal-sale">
+                                <span class="produce__body-modal-sale-percent">10%</span>
+                                <span class="produce__body-modal-sale-cut-price">GIẢM</span>
+                            </div>
+                         </a>
+                     </div>
+                     <div class="produce__body-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/3.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                            <div class="produce__body-modal-like">
+                                Yêu thích 
+                            </div>
+                            <div class="produce__body-modal-sale">
+                                <span class="produce__body-modal-sale-percent">10%</span>
+                                <span class="produce__body-modal-sale-cut-price">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                     <div class="produce__body-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/4.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                            <div class="produce__body-modal-like">
+                                Yêu thích 
+                            </div>
+                            <div class="produce__body-modal-sale">
+                                <span class="produce__body-modal-sale-percent">10%</span>
+                                <span class="produce__body-modal-sale-cut-price">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/5.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                            <div class="produce__body-modal-like">
+                                Yêu thích 
+                            </div>
+                            <div class="produce__body-modal-sale">
+                                <span class="produce__body-modal-sale-percent">10%</span>
+                                <span class="produce__body-modal-sale-cut-price">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                            <div class="produce__body-modal-like">
+                                Yêu thích 
+                            </div>
+                            <div class="produce__body-modal-sale">
+                                <span class="produce__body-modal-sale-percent">10%</span>
+                                <span class="produce__body-modal-sale-cut-price">GIẢM</span>
+                            </div>
+                        </a>
+                    </div>
+                 </div>
+             </div>
+             <div class="produce">
+                <div class="produce__heading">
+                    <span class="produce__heading-span">TÌM KIẾM HÀNG ĐẦU</span>
+                    <a href="" class="produce__heading-link">Xem tất cả
+                       <i class="produce__heading-icon fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="produce__body">
+                    <div class="produce__body-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/12.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                            <div class="produce__modal-top">
+                                <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/shopmicrofe/91acab3345a1ace24f9cdae9838c8c2a.png" alt="" class="produce__modal-top-img">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/8.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                            <div class="produce__modal-top">
+                                <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/shopmicrofe/3d56efbb818a7457e53621972db6f918.png" alt="" class="produce__modal-top-img">
+                            </div>
+                        </a>
+                    </div>
+                      <div class="produce__body-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/9.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                            <div class="produce__modal-top">
+                                <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/shopmicrofe/de11f24be0ff7c8b943e9fb03f8a99be.png" alt="" class="produce__modal-top-img">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item">
+                       <a href="" class="produce__body-link">
+                          <div class="produce__body-item-img">
+                              <img src="./img/13.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                          </div>
+                           <div class="produce__body-total-span">
+                               <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                               <div class="produce__body-trend"># Shop xu hướng</div>
+                               <div class="produce__body-price">
+                                  <div class="produce__body-pricedong">₫</div> 
+                                  <div class="produce__body-pricenumber">100.000</div>
+                               </div>
+                               <div class="produce__body-heart">
+                                 <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                  <div class="produce__body-star">
+                                      <i class="produce__body_star-size fas fa-star"></i>
+                                      <i class="produce__body_star-size fas fa-star"></i>
+                                      <i class="produce__body_star-size fas fa-star"></i>
+                                      <i class="produce__body_star-size fas fa-star"></i>
+                                      <i class="produce__body_star-size fas fa-star"></i>
+                                      <span class="produce__body-sold">Đã bán 250</span>
+                                  </div>
+                               </div>
+                               <div class="produce__body-address">Hà Nội</div>
+                           </div>
+                           <div class="produce__modal-top">
+                            <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/shopmicrofe/72f754ff0ec8f5b0a744b01ee11aae0e.png" alt="" class="produce__modal-top-img">
+                         </div>
+                       </a>
+                   </div>
+                   <div class="produce__body-item">
+                       <a href="" class="produce__body-link">
+                          <div class="produce__body-item-img">
+                              <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                          </div>
+                           <div class="produce__body-total-span">
+                               <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                               <div class="produce__body-trend"># Shop xu hướng</div>
+                               <div class="produce__body-price">
+                                  <div class="produce__body-pricedong">₫</div> 
+                                  <div class="produce__body-pricenumber">100.000</div>
+                               </div>
+                               <div class="produce__body-heart">
+                                 <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                  <div class="produce__body-star">
+                                      <i class="produce__body_star-size fas fa-star"></i>
+                                      <i class="produce__body_star-size fas fa-star"></i>
+                                      <i class="produce__body_star-size fas fa-star"></i>
+                                      <i class="produce__body_star-size fas fa-star"></i>
+                                      <i class="produce__body_star-size fas fa-star"></i>
+                                      <span class="produce__body-sold">Đã bán 250</span>
+                                  </div>
+                               </div>
+                               <div class="produce__body-address">Hà Nội</div>
+                           </div>
+                           <div class="produce__modal-top">
+                            <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/shopmicrofe/9bcaf10cbd6d11cd642bb0a4d0d16a56.png" alt="" class="produce__modal-top-img">
+                        </div>
+                       </a>
+                   </div>
+                   <div class="produce__body-item">
+                       <a href="" class="produce__body-link">
+                          <div class="produce__body-item-img">
+                              <img src="./img/10.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                          </div>
+                           <div class="produce__body-total-span">
+                               <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                               <div class="produce__body-trend"># Shop xu hướng</div>
+                               <div class="produce__body-price">
+                                  <div class="produce__body-pricedong">₫</div> 
+                                  <div class="produce__body-pricenumber">100.000</div>
+                               </div>
+                               <div class="produce__body-heart">
+                                 <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                  <div class="produce__body-star">
+                                      <i class="produce__body_star-size fas fa-star"></i>
+                                      <i class="produce__body_star-size fas fa-star"></i>
+                                      <i class="produce__body_star-size fas fa-star"></i>
+                                      <i class="produce__body_star-size fas fa-star"></i>
+                                      <i class="produce__body_star-size fas fa-star"></i>
+                                      <span class="produce__body-sold">Đã bán 250</span>
+                                  </div>
+                               </div>
+                               <div class="produce__body-address">Hà Nội</div>
+                           </div>
+                           <div class="produce__modal-top">
+                            <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/shopmicrofe/cf9aa4ed4eba33106286433a656e2c8b.png" alt="" class="produce__modal-top-img">
+                           </div>
+                       </a>
+                   </div>
+                </div>
+             </div>
+            </div>
+            <div class="produce__over">
+                <div class="produce__over-menu">
+                    <div class="produce__over-list">
+                        <i class="fas fa-bars"></i>
+                        <span class="produce__over-list-span">Danh Mục</span>
+                    </div>
+                    <div class="produce__over-right">
+                        <div class="produce__over-right-outlink">
+                            <div class="produce__over-right-icon">
+                                <i class="produce__over-right-in-icon fas fa-caret-right"></i>
+                            </div> 
+                           <a href="" class="produce__over-list-link">Áo thun</a>
+                        </div>
+                        <div class="produce__over-right-outlink">
+                        <a href="" class="produce__over-list-link">Thời Trang Nam</a>
+                        </div>
+                        <div class="produce__over-right-outlink">
+                        <a href="" class="produce__over-list-link">Vest</a>
+                        </div>
+                        <div class="produce__over-right-outlink">
+                        <a href="" class="produce__over-list-link">Cadigan</a>
+                        </div>
+                        <div class="produce__over-right-outlink">
+                        <a href="" class="produce__over-list-link">Áo Khoác Nam</a>
+                        </div>
+                        <div class="produce__over-right-outlink">
+                        <a href="" class="produce__over-list-link">Áo Thể Thao</a>
+                        </div>
+                        <div class="produce__over-right-outlink">
+                        <a href="" class="produce__over-list-link">Áo Bóng Rổ</a>
+                        </div>
+                        <div class="produce__over-right-outlink">
+                        <a href="" class="produce__over-list-link">Quần Jean</a>
+                        </div>
+                        <div class="produce__over-right-outlink">
+                        <a href="" class="produce__over-list-link">Áo Hodie</a>
+                        </div>
+                        <div class="produce__over-right-outlink">
+                        <a href="" class="produce__over-list-link">Thắt Lưng</a>
+                        </div>
+                        <div class="produce__over-right-outlink">
+                        <a href="" class="produce__over-list-link">Áo Sơ Mi</a>
+                        </div>
+                        <div class="produce__over-right-outlink">
+                        <a href="" class="produce__over-list-link">Áo Free Size</a>
+                        </div>
+                        <div class="produce__over-right-outlink">
+                        <a href="" class="produce__over-list-link">Áo Gió</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="produce__over-total-item">
+                    <div class="produce__over-tab">
+                        <div class="produce__over-items-heading">
+                            <div class="produce__over-heading-left">
+                                <span class="produce__over-items-heading-span1">Sắp xếp theo</span>
+                                <div class="produce__over-heading-btn1">
+                                    <a href="" class="produce__over-heading-link">
+                                        <span class="produce__over-heading-span-btn2">Phổ biến</span>  
+                                    </a>
+                                </div>
+                                 <div class="produce__over-heading-btn2">
+                                    <a href="" class="produce__over-heading-link">
+                                        Bán chạy nhất
+                                    </a>
+                                </div>
+                                 <div class="produce__over-heading-btn3">
+                                    <a href="" class="produce__over-heading-link"> 
+                                        <div class="produce__over-heading-inbtn3">
+                                            <span class="produce__over-heading-price">Giá</span>
+                                            <i class="produce__over-heading-icon fas fa-chevron-down"></i>
+                                        </div>                               
+                                    </a>
+                                    <div class="produce__over-heading-modal">
+                                        <a href="" class="produce__over-heading-s1">Giá: Cao đến Thấp</a>
+                                        <a href="" class="produce__over-heading-s1">Giá: Thấp đến Cao</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="produce__over-heading-right">
+
+                                <span class="produce__over-items-heading-span2">1</span>
+                                <span class="produce__over-items-heading-span3">/2</span>
+                              
+                            <div class="produce__over-heading-btn4">
+                                <i class="produce__over-heading-icon1 fas fa-chevron-left"></i>
+                             </div>
+                               
+                             <div class="produce__over-heading-btn5">
+                                <a href="" class="produce__over-heading-link no-margin">   
+                                    <i class="produce__over-heading-icon2 fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                 <div class="produce__over-items"> 
+                    <div class="produce__body-item produce__over-item">
+                            <a href="" class="produce__body-link">
+                               <div class="produce__body-item-img">
+                                   <img src="./img/14.jpeg" alt="Áo khoác" class="produce__body-img">
+    
+                               </div>
+                                <div class="produce__body-total-span">
+                                    <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                    <div class="produce__body-trend"># Shop xu hướng</div>
+                                    <div class="produce__body-price">
+                                       <div class="produce__body-pricedong">₫</div> 
+                                       <div class="produce__body-pricenumber">100.000</div>
+                                    </div>
+                                    <div class="produce__body-heart">
+                                      <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                       <div class="produce__body-star">
+                                           <i class="produce__body_star-size fas fa-star"></i>
+                                           <i class="produce__body_star-size fas fa-star"></i>
+                                           <i class="produce__body_star-size fas fa-star"></i>
+                                           <i class="produce__body_star-size fas fa-star"></i>
+                                           <i class="produce__body_star-size fas fa-star"></i>
+                                           <span class="produce__body-sold">Đã bán 250</span>
+                                       </div>
+                                    </div>
+                                    <div class="produce__body-address">Hà Nội</div>
+                                </div>
+                            </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/15.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/16.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/17.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/18.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/19.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/20.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/21.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/22.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt1" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="produce__body-item produce__over-item">
+                        <a href="" class="produce__body-link">
+                           <div class="produce__body-item-img">
+                               <img src="./img/shirt2.jpeg" alt="Áo khoác" class="produce__body-img">
+
+                           </div>
+                            <div class="produce__body-total-span">
+                                <div class="produce__body-nameproduce">Áo khoác Nam</div>
+                                <div class="produce__body-trend"># Shop xu hướng</div>
+                                <div class="produce__body-price">
+                                   <div class="produce__body-pricedong">₫</div> 
+                                   <div class="produce__body-pricenumber">100.000</div>
+                                </div>
+                                <div class="produce__body-heart">
+                                  <span class="produce__body-heart-icons produce__body-heart-icons-liked">
+                                         <i class="far fa-heart produce__body-heart-small"></i>
+                                         <i class="fas fa-heart produce__body-heart-small2"></i>
+                                     </span>
+                                   <div class="produce__body-star">
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <i class="produce__body_star-size fas fa-star"></i>
+                                       <span class="produce__body-sold">Đã bán 250</span>
+                                   </div>
+                                </div>
+                                <div class="produce__body-address">Hà Nội</div>
+                            </div>
+                        </a>
+                    </div>                  
+                 </div>
+                 <div class="produce__footer-page">
+                     <div class="produce__footer-page-left">
+                         <a href="" class="produce__footer-page-link">
+                            <i class="produce__footer-page-icon-left fas fa-chevron-left"></i>
+                         </a>
+                        </div>
+                     <div class="produce__footer-page-1">
+                         <a href="" class="produce__footer-page-link">
+                             <span class="produce__footer-page-span1">1</span>
+                         </a>
+                    </div>
+                     <div class="produce__footer-page-2">
+                         <a href="" class="produce__footer-page-link">
+                             <span class="produce__footer-page-span2">2</span>
+                         </a>
+                        </div>
+                     <div class="produce__footer-page-right">
+                         <a href="" class="produce__footer-page-link">
+                            <i class="produce__footer-page-icon-right fas fa-chevron-right"></i>
+                         </a>
+                        </div>
+                 </div>
+                </div>
+
+            </div>
+       </div>
+     
+       <div class="bgr3"></div>
+       <footer class="footer">
+        <div class="footer-bgr1px"></div>
+        <div class="footer__list">
+            <div class="footer__list-cskh">
+                <div class="footer__list-cskh-heading">CHĂM SÓC KHÁCH HÀNG</div>
+                <ul class="footer__list-cskh-mom">
+                    <li class="footer__list-cskh-child">
+                        <a href="" class="footer__list-cskh-link">Trung Tâm Trợ Giúp</a>
+                    </li>
+                    <li class="footer__list-cskh-child">
+                        <a href="" class="footer__list-cskh-link">Shopee Block</a>
+                    </li>
+                    <li class="footer__list-cskh-child">
+                        <a href="" class="footer__list-cskh-link">Shopee Mall</a>
+                    </li>   
+                    <li class="footer__list-cskh-child">
+                        <a href="" class="footer__list-cskh-link">Hướng Dẫn Mua Hàng</a>
+                    </li>
+                    <li class="footer__list-cskh-child">
+                        <a href="" class="footer__list-cskh-link">Hướng Dẫn Bán Hàng</a>
+                    </li>
+                    <li class="footer__list-cskh-child">
+                        <a href="" class="footer__list-cskh-link">Thanh Toán</a>
+                    </li>
+                    <li class="footer__list-cskh-child">
+                        <a href="" class="footer__list-cskh-link">Shopee Xu</a>
+                    </li>
+                    <li class="footer__list-cskh-child">
+                        <a href="" class="footer__list-cskh-link">Vận ChuyểnChuyển</a>
+                    </li>
+                    <li class="footer__list-cskh-child">
+                        <a href="" class="footer__list-cskh-link">Trả Hàng & Hoàn Tiền</a>
+                    </li>
+                    <li class="footer__list-cskh-child">
+                        <a href="" class="footer__list-cskh-link">Chăm sóc Khách Hàng</a>
+                    </li>
+                    <li class="footer__list-cskh-child">
+                        <a href="" class="footer__list-cskh-link">Chính Sách Bảo Hành</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__list-cskh">
+                <div class="footer__list-cskh-heading">VỀ SHOPEE</div>
+                <ul class="footer__list-cskh-mom">
+                    <li class="footer__list-cskh-child">
+                        <a href="" class="footer__list-cskh-link">Giới Thiệu Về Shopee Việt Nam</a>
+                    </li>
+                    <li class="footer__list-cskh-child">
+                        <a href="" class="footer__list-cskh-link">Tuyển Dụng</a>
+                    </li>
+                    <li class="footer__list-cskh-child">
+                        <a href="" class="footer__list-cskh-link">Điều Khoản Shopee</a>
+                    </li>
+                    <li class="footer__list-cskh-child">
+                        <a href="" class="footer__list-cskh-link">Chính Sách Bảo Mật</a>
+                    </li>
+                    <li class="footer__list-cskh-child">
+                        <a href="" class="footer__list-cskh-link">Chính Hãng</a>
+                    </li>
+                    <li class="footer__list-cskh-child">
+                        <a href="" class="footer__list-cskh-link">Kênh Người Bán</a>
+                    </li>
+                    <li class="footer__list-cskh-child">
+                        <a href="" class="footer__list-cskh-link">Flash Sales</a>
+                    </li>
+                    <li class="footer__list-cskh-child">
+                        <a href="" class="footer__list-cskh-link">Chương Trình Tiếp Thị Liên Kết Với Shopee</a>
+                    </li>
+                    <li class="footer__list-cskh-child">
+                        <a href="" class="footer__list-cskh-link">Liên Hệ Với Truyền Thông</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__list-cskh">
+                <div class="footer__list-cskh-heading">THANH TOÁN</div>
+                <div class="footer__list-pay-mom">
+                    <img src="./img/Ảnh chụp màn hình 2021-10-11 201517.jpg" alt="" class="footer__list-pay-mom-img">
+                </div>
+                <div class="footer__list-cskh-heading">ĐƠN VỊ VẬN CHUYỂN</div>
+                <div class="footer__list-pay-mom">
+                   <img src="./img/Ảnh chụp màn hình 2021-10-11 222436.jpg" alt="" class="footer__list-pay-mom-img">
+                </div>
+            </div>
+
+            <div class="footer__list-cskh">
+                <div class="footer__list-cskh-heading">THEO DÕI CHÚNG TÔI TRÊN</div>
+                <ul class="footer__list-cskh-mom">
+                    <li class="footer__list-cskh-child">
+                        <a href="" class="footer__list-cskh-link">
+                            <i class="footer__list-cskh-icon fab fa-facebook"></i>Facebook
+                        </a>
+                    </li>
+                    <li class="footer__list-cskh-child">
+                        <a href="" class="footer__list-cskh-link">
+                            <i class="footer__list-cskh-icon fab fa-instagram"></i>Instagram
+                        </a>
+                    </li>
+                    <li class="footer__list-cskh-child">                    
+                        <a href="" class="footer__list-cskh-link">
+                            <i class="footer__list-cskh-icon fab fa-linkedin"></i>Linkedin
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__list-cskh">
+                <div class="footer__list-cskh-heading">TẢI ỨNG DỤNG SHOPE NGAY THÔI</div>
+                <div class="footer__list-dowload-Surrounded">
+                    <img src="./img/Ma-QR-shopee.png" alt="" class="footer__list-dowload-img">
+                    <ul class="footer__list-dowload-mom">
+                        <li class="footer__list-dowload-child">
+                            <a href="" class="footer__list-dowload-link">
+                                <img src="./img/app-store.png" alt="" class="footer__list-dowload-img2">
+                            </a>
+                        </li>
+                        <li class="footer__list-dowload-child">
+                            <a href="" class="footer__list-dowload-link">
+                                <img src="./img/google-play.png" alt="" class="footer__list-dowload-img2">
+                            </a>
+                        </li>
+                        <li class="footer__list-dowload-child">
+                            <a href="" class="footer__list-dowload-link">
+                                <img src="./img/app-galerry.png" alt="" class="footer__list-dowload-img2">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bgr1px"></div>
+        <div class="footer__rowlist">
+            <div class="footer__rowlist-left">© 2021 Shopee. Tất cả các quyền được bảo lưu.</div>
+            <div class="footer__rowlist-right">
+                <div class="footer__rowlist-span">Quốc gia & Khu vực:</div>
+                <div class="footer__rowlist-national">
+                    <a href="" class="footer__rowlist-link">
+                        Singapore
+                    </a> 
+                </div>
+                        
+                <div class="footer__rowlist-national">
+                    <a href="" class="footer__rowlist-link">
+                        Indonesia
+                    </a>  
+                </div>
+                <div class="footer__rowlist-national">
+                    <a href="" class="footer__rowlist-link">
+                        Thái Lan
+                    </a> 
+                </div>
+                <div class="footer__rowlist-national">
+                    <a href="" class="footer__rowlist-link">
+                        Đài Loan
+                    </a>  
+                </div>
+                <div class="footer__rowlist-national">
+                    <a href="" class="footer__rowlist-link">
+                        Malaysia
+                    </a> 
+                </div>
+                <div class="footer__rowlist-national">
+                    <a href="" class="footer__rowlist-link">
+                        Việt Nam
+                    </a>  
+                </div>
+                <div class="footer__rowlist-national">
+                    <a href="" class="footer__rowlist-link">
+                        Philippines
+                    </a>  
+                </div>
+                <div class="footer__rowlist-national">
+                    <a href="" class="footer__rowlist-link">
+                        Brazil
+                    </a> 
+                </div>
+                <div class="footer__rowlist-national">
+                    <a href="" class="footer__rowlist-link">
+                        México
+                    </a>  
+                </div>
+                <div class="footer__rowlist-national">
+                    <a href="" class="footer__rowlist-link">
+                        Colombia
+                    </a> 
+                </div>
+                <div class="footer__rowlist-national">
+                    <a href="" class="footer__rowlist-link">
+                        Chile
+                    </a>  
+                </div>
+
+            </div>
+        </div>
+       </footer>
+       <div class="end">
+           <div class="end__list">
+               <div class="end__list-item none-border">
+                   <a href="" class="end__list-item-link">
+                       <span class="end__list-item-span">
+                          CHÍNH SÁCH BẢO MẬT
+                       </span>
+                   </a>
+                </div>
+               <div class="end__list-item">
+                   <a href="" class="end__list-item-link">
+                       <span class="end__list-item-span">
+                          QUY CHẾ HOẠT ĐỘNG
+                       </span>
+                   </a>
+                </div>
+               <div class="end__list-item">
+                   <a href="" class="end__list-item-link">
+                       <span class="end__list-item-span">
+                          CHÍNH SÁCH VẬN CHUYỂN 
+                       </span>
+                   </a>
+                </div>
+               <div class="end__list-item">
+                   <a href="" class="end__list-item-link">
+                       <span class="end__list-item-span">
+                              CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN
+                        </span>
+                   </a>
+                </div>
+           </div>
+           <div class="end__list-stamp">
+               <a href="" class="end__list-stamp-link"><img src="./img/đã đăng ký .jpg" alt="" class="end__list-stamp-img"></a>
+               <a href="" class="end__list-stamp-link"><img src="./img/đã đăng ký .jpg" alt="" class="end__list-stamp-img"></a>
+               <a href="" class="end__list-stamp-link"><img src="./img/vân tay.jpg" alt="" class="end__list-stamp-img2"></a>
+           </div>
+           <div class="end__office">Công ty TNHH Shopee</div>
+           <div class="end__address">Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, Phường Ngọc Khánh, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn</div>
+           <div class="end__address">Chịu Trách Nhiệm Quản Lý Nội Dung: Nguyễn Đức Trí - Điện thoại liên hệ: 024 73081221 (ext 4678)</div>
+           <div class="end__address">Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015</div>
+           <div class="end__address">© 2015 - Bản quyền thuộc về Công ty TNHH Shopee</div>
+
+       </div>
+   </div>
+   <div class="modal">
+       <div class="modal-overlay">
+
+       </div>
+       <div class="modal-body">
+          <div class="modal-body-inner">
+              <!--signup-form -->
+              <!-- <div class="auth-form">
+                  <div class="auth-form-container">
+                    <div class="auth-form__header">
+                        <h3 class="signup">Đăng ký </h3>
+                        <span class="login">Đăng nhập </span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__form-group">
+                            <input type="text" class="auth-form-input" placeholder="Email của bạn ">
+                        </div>
+                        <div class="auth-form__form-group">
+                          <input type="password" class="auth-form-input" placeholder="Mật khẩu ">
+                      </div>
+                      <div class="auth-form__form-group">
+                          <input type="password" class="auth-form-input" placeholder="Nhập lại mật khẩu ">
+                      </div>
+                      <div class="auth-form-groupb">
+                          <div class="auth-form-border"></div>
+                          <span class="auth-form-or">Hoặc</span>
+                          <div class="auth-form-border"></div>
+                        </div>
+                      </div>
+                      <div class="auth-form-socialicon">
+                          <div class="icon-fb">
+                              <a href="" class="auth-form-link">
+                                  <i class=" auth-icon fab fa-facebook" ></i>
+                                  <span class="google-span">Facebook</span>
+                              </a>
+                          </div>
+                          <div class="icon-gg">
+                              <a href="" class="auth-form-link-g">
+                                  <img src="./img/google.jpg" alt="" class="google-icon">
+                                  <span class="google-span">Google</span>
+                              </a>
+                          </div>
+                          <div class="icon-apple">
+                              <a href="" class="auth-form-link">
+                                  <i class="auth-icon fab fa-apple"></i>
+                                  <span class="google-span">
+                                     Apple 
+                                  </span>
+                              </a>
+                          </div>
+                      </div>
+                    <div class="auth-form-terms">
+                        <p class="auth-form-terms-p">
+                          Bằng việc đăng kí, bạn đã đồng ý với Shopee về 
+                        </p>
+                        <a href="https://shopee.vn/legaldoc/termsOfService/?__classic__=1" class="term-link">Điều khoản dịch vụ</a>
+                        <span style="font-size: 14px ;font-weight:200" >&<span>
+                        <a href="https://shopee.vn/legaldoc/privacy/?__classic__=1" class="term-link">Chính sách bảo mật</a>
+                    </div>
+                  </div>
+                  <div class="auth-form__controls">
+                      <button class="btn">TRỞ LẠI</button>
+                      <button class="btn btn--primary">ĐĂNG KÝ</button>
+
+                  </div>
+              </div> -->
+              <!-- login-form  -->
+              <div class="auth-form">
+                <div class="auth-form-container">
+                  <div class="auth-form__header">
+                      <h3 class="signup">Đăng nhập </h3>
+                      <span class="login">Đăng ký </span>
+                  </div>
+                  <div class="auth-form__form">
+                      <div class="auth-form__form-group">
+                          <input type="text" class="auth-form-input" placeholder="Email/Số điện thoại/Tên đăng nhập ">
+                      </div>
+                      <div class="auth-form__form-group">
+                        <input type="password" class="auth-form-input" placeholder="Mật khẩu ">
+                    </div>
+                    <div class="login-sms">
+                        <a href="" class="login-sms-con">Quên mật khẩu</a>
+                        <a href="" class="login-sms-con">Đăng nhập với SMS</a>
+                    </div>
+                    <div class="auth-form-groupb">
+                        <div class="auth-form-border"></div>
+                        <span class="auth-form-or">Hoặc</span>
+                        <div class="auth-form-border"></div>
+                      </div>
+                    </div>
+                    <div class="auth-form-socialicon">
+                        <div class="icon-fb">
+                            <a href="" class="auth-form-link">
+                                <i class=" auth-icon fab fa-facebook" ></i>
+                                <span class="google-span">Facebook</span>
+                            </a>
+                        </div>
+                        <div class="icon-gg">
+                            <a href="" class="auth-form-link-g">
+                                <img src="./img/google.jpg" alt="" class="google-icon">
+                                <span class="google-span">Google</span>
+                            </a>
+                        </div>
+                        <div class="icon-apple">
+                            <a href="" class="auth-form-link">
+                                <i class="auth-icon fab fa-apple"></i>
+                                <span class="google-span">
+                                   Apple 
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="auth-form__controls mt-60">
+                    <button class="btn">TRỞ LẠI</button>
+                    <button class="btn btn--primary">ĐĂNG NHẬP</button>
+
+                </div>
+            </div>
+          </div>
+       </div>
+   </div>
+    
+</body>
+</html>
+
+<!-- design by Thuc nguyen  -->
